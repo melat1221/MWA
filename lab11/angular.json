@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "counter": {
+    "lab11": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/counter",
+            "outputPath": "dist/lab11",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "counter:build"
+            "browserTarget": "lab11:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "counter:build:production"
+              "browserTarget": "lab11:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "counter:build"
+            "browserTarget": "lab11:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "counter-e2e": {
+    "lab11-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "counter:serve"
+            "devServerTarget": "lab11:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "counter:serve:production"
+              "devServerTarget": "lab11:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "counter"
+  "defaultProject": "lab11"
 }
